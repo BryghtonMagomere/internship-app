@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f4f8; /* Light background for contrast */
+    color: #333;
+}
+
+/* Login Form Container */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px; /* Increased padding for more breathing room */
+    min-height: 80vh; 
+    max-height: 450px; /* Set a max height to prevent it from being too long */
+    background: rgba(255, 255, 255, 0.6); /* Semi-transparent white background for form */
+    color: #333; /* Change text color to be more visible */
+    border-radius: 20px; /* Slightly increased border radius for modern feel */
+    width: 90%; /* Responsive width */
+    max-width: 600px; /* Control max width for better appearance */
+    margin: 50px auto;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Deeper shadow for a floating effect */
+    backdrop-filter: blur(10px); /* Add blur effect to the background image */
+}
+
+/* Header */
+.login-form h2 {
+    font-size: 2.5rem; /* Increased font size for better impact */
+    margin-bottom: 20px; /* Adjusted margin for spacing */
+    text-align: center; /* Center text alignment */
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px; /* Decreased margin for tighter layout */
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px; /* Reduced margin for tighter layout */
+    font-size: 1rem;
+    color: #0077b6; /* Changed to a contrasting color */
+}
+
+.form-group input {
+    width: calc(100% + 10px); /* Increased width for input fields */
+    padding: 15px; /* Increased padding for a more comfortable input area */
+    border: 2px solid #0077b6; /* Added border for better visibility */
+    border-radius: 10px; /* Maintain rounded corners */
+    font-size: 1rem;
+    background: #fff;
+    color: #333;
+    transition: border 0.3s ease; /* Smooth transition for focus */
+    margin-left: -5px; /* Adjust left margin to center the increased width */
+}
+
+.form-group input:focus {
+    border-color: #00b4d8; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Login Button */
+.login-button {
+    width: 100%;
+    padding: 15px; /* Increased padding for better touch targets */
+    border: none;
+    border-radius: 50px;
+    background: #00b4d8;
+    color: #fff;
+    font-size: 1.2rem; /* Slightly larger font for button */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.login-button:hover {
+    background: #0077b6;
+    transform: scale(1.05);
+}
+
+/* Register Link */
+.register-link {
+    margin-top: 15px; /* Reduced margin for less space */
+    font-size: 0.9rem;
+    color: #0077b6;
+}
+
+.register-link a {
+    color: #00b4d8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.register-link a:hover {
+    color: #0077b6;
+}
+
+
+body {
+    background-image: url('https://img.freepik.com/free-photo/school-decoration-with-rubber-sharpener-notebook_23-2147665298.jpg?t=st=1729592512~exp=1729596112~hmac=e8a050b6334952bb9f705c1d20ce156c4376f5e35877b663cc2eba6e361062e7&w=1800'); /* Add your background image path */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}

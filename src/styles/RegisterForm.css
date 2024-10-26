@@ -1,0 +1,149 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f4f8;
+    color: #333;
+}
+
+.register-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://th.bing.com/th/id/OIP.J2rEkR_842X1X9XnYSIfNQHaE3?w=550&h=361&rs=1&pid=ImgDetMain');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.register-form {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 800px; /* Adjusted for better presentation */
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+/* Heading Containers */
+.header-container,
+.subheader-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-container h2,
+.subheader-container h3 {
+    color: #0077b6;
+}
+
+/* Adjusted Heading Styles */
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Form Sections */
+.form-section {
+    margin-bottom: 30px;
+    padding: 10px 0; /* Added padding for better section separation */
+    border-bottom: 1px solid #ddd; /* Optional border for visual separation */
+}
+
+.form-section:last-of-type {
+    border-bottom: none; /* Remove border from the last section */
+}
+
+/* Form Rows and Inputs */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 20px; /* Added gap for better horizontal spacing */
+}
+
+.form-group {
+    width: 48%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #0077b6;
+    outline: none;
+}
+
+/* Button Styling to Match Modern Style */
+.register-button {
+    width: 200px; /* Set a fixed width */
+    padding: 12px; /* Keep the padding for a comfortable click area */
+    background: linear-gradient(135deg, #0077b6, #00b4d8);
+    color: #fff;
+    font-size: 1rem; /* Font size remains the same */
+    border: none;
+    border-radius: 30px; /* Adjusted radius to match the size */
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.register-button:hover {
+    background: linear-gradient(135deg, #00b4d8, #0077b6);
+    transform: scale(1.05);
+}
+
+/* Login Link Styling */
+.login-link {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.login-link a {
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+    color: #00b4d8;
+}
+
+/* Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        gap: 10px; /* Reduced gap for smaller screens */
+    }
+
+    .form-group {
+        width: 100%;
+    }
+}
