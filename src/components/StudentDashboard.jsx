@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import './StudentDashboard.css';
-import { FaBars, FaUser, FaTasks, FaBook, FaFileAlt, FaChartLine, FaBell, FaLock, FaSignOutAlt, FaGraduationCap, FaTable } from 'react-icons/fa';
+import { FaBars, FaUser, FaTasks, FaBook, FaChartLine, FaBell, FaLock, FaSignOutAlt, FaGraduationCap, FaCalendarAlt, FaLifeRing, FaToolbox } from 'react-icons/fa';
 
 const StudentDashboard = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   // Sample data for student
   const studentName = "Bryghton";
-  const placementProgress = 57; 
+  const placementProgress = 57;
 
   // Toggle the sidebar
   const toggleSidebar = () => {
@@ -20,21 +20,15 @@ const StudentDashboard = () => {
       <div className={`student-sidebar ${isSidebarOpen ? 'open' : ''}`}>
         <ul className="student-sidebar-links">
           <li>
-            <a href="#dashboard">
-              <FaChartLine className="student-sidebar-icon" />
-              <span>Dashboard</span>
+            <a href="#development-track">
+              <FaToolbox className="student-sidebar-icon" />
+              <span>Development Track</span>
             </a>
           </li>
           <li>
-            <a href="#course">
+            <a href="#resources">
               <FaGraduationCap className="student-sidebar-icon" />
-              <span>Course</span>
-            </a>
-          </li>
-          <li>
-            <a href="#report">
-              <FaTable className="student-sidebar-icon" />
-              <span>Report</span>
+              <span>Resources</span>
             </a>
           </li>
           <li>
@@ -44,9 +38,21 @@ const StudentDashboard = () => {
             </a>
           </li>
           <li>
-            <a href="#documents">
-              <FaFileAlt className="student-sidebar-icon" />
-              <span>Important Documents</span>
+            <a href="#calendar">
+              <FaCalendarAlt className="student-sidebar-icon" />
+              <span>Calendar</span>
+            </a>
+          </li>
+          <li>
+            <a href="#support">
+              <FaLifeRing className="student-sidebar-icon" />
+              <span>Support & Help</span>
+            </a>
+          </li>
+          <li>
+            <a href="#report">
+              <FaChartLine className="student-sidebar-icon" />
+              <span>Report</span>
             </a>
           </li>
           <li>
@@ -74,37 +80,39 @@ const StudentDashboard = () => {
           <button className="student-logout-btn">Logout</button>
         </div>
         <div className="student-section-container">
-          <div className="student-card" onClick={() => alert('Current Placement Info Clicked!')}>
+          <div className="student-card" onClick={() => alert('User Profile Clicked!')}>
             <FaUser className="student-card-icon" />
             <div className="student-card-content">
-              <h3>Current Placement Information</h3>
-              <p>Details of your ongoing internship or attachment.</p>
+              <h3>User Profile</h3>
+              <p>Manage your personal information and settings.</p>
             </div>
           </div>
-          <div className="student-card" onClick={() => alert('Pending Tasks Clicked!')}>
-            <FaTasks className="student-card-icon" />
+          <div className="student-card" onClick={() => alert('Placement Information Clicked!')}>
+            <FaChartLine className="student-card-icon" />
             <div className="student-card-content">
-              <h3>Pending Tasks</h3>
-              <p>Tasks assigned to you during your placement.</p>
+              <h3>Placement Information</h3>
+              <p>Details of the placement company and role.</p>
             </div>
           </div>
           <div className="student-card" onClick={() => alert('Logbook Entries Clicked!')}>
             <FaBook className="student-card-icon" />
             <div className="student-card-content">
               <h3>Logbook Entries</h3>
-              <p>Record your daily activities during your placement.</p>
+              <p>Record weekly experiences and reflections.</p>
             </div>
           </div>
-          <div className="student-card" onClick={() => alert('Placement Progress Clicked!')}>
+          <div className="student-card" onClick={() => alert('Task Management Clicked!')}>
+            <FaTasks className="student-card-icon" />
+            <div className="student-card-content">
+              <h3>Task Management</h3>
+              <p>Assigned tasks with due dates.</p>
+            </div>
+          </div>
+          <div className="student-card" onClick={() => alert('Performance Metrics Clicked!')}>
             <FaChartLine className="student-card-icon" />
             <div className="student-card-content">
-              <h3>Placement Progress</h3>
-              <div className="student-progress-bar-container">
-                <div className="student-progress-bar" style={{ width: `${placementProgress}%` }}>
-                  {placementProgress}%
-                </div>
-              </div>
-              <p>Your current progress in the attachment journey.</p>
+              <h3>Performance Metrics</h3>
+              <p>Visual dashboard of performance analytics.</p>
             </div>
           </div>
         </div>

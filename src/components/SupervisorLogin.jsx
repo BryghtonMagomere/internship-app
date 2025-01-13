@@ -6,7 +6,7 @@ const SupervisorLogin = () => {
     let navigate = useNavigate()
     return (
         <div className="login-form">
-            <h2>Supervisor Login</h2>
+            <h2>Mentor Login</h2>
             <form>
                 <div className="form-group">
                     <label htmlFor="email">Email</label>

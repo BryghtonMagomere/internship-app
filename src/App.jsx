@@ -9,6 +9,7 @@ import SupervisorLogin from './components/SupervisorLogin';
 import AdminLogin from './components/AdminLogin';
 import StudentDashboard from './components/StudentDashboard';
 import SupervisorDashboard from './components/SupervisorDashboard';
+import AdminDashboard from './components/AdminDashboard';
 function App() {
     return (
         <Router>
@@ -29,6 +30,7 @@ function App() {
                     {/* Dashboards */}
                     <Route path="/student-dashboard" exact element={<StudentDashboard />} />
                     <Route path="/supervisor-dashboard" exact element={<SupervisorDashboard />} />
+                    <Route path="/admin-dashboard" exact element={<AdminDashboard />} />
                 </Routes>
             </div>
         </Router>

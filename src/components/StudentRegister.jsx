@@ -90,6 +90,8 @@ const StudentRegister = () => {
                                 <label htmlFor="start-date">Start Date</label>
                                 <input type="date" id="start-date" required />
                             </div>
+                           
+                            
                         </div>
                     </div>
 

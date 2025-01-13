@@ -1,7 +1,9 @@
 import React from 'react';
 import './../styles/LoginForm.css';
+import { useNavigate } from 'react-router-dom';
 
 const AdminLogin = () => {
+    let navigate = useNavigate()
     return (
         <div className="login-form">
             <h2>Admin Login</h2>
@@ -24,7 +26,7 @@ const AdminLogin = () => {
                         required 
                     />
                 </div>
-                <button type="submit" className="login-button">Login</button>
+                <button onClick={()=>navigate('/admin-dashboard')} type="submit" className="login-button">Login</button>
             </form>
             <div className="register-link">
                 <p>Don't have an account? <a href="/admin-register">Register here</a></p>

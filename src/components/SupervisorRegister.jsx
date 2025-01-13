@@ -5,11 +5,11 @@ const SupervisorRegister = () => {
     return (
         <div className="register-form-container">
             <div className="register-form">
-                <h2>Supervisor Registration</h2>
+                <h2>Mentor Registration</h2>
                 <form>
                     {/* Supervisor Details Section */}
                     <div className="form-section">
-                        <h3>Supervisor Details</h3>
+                        <h3>Mentor Details</h3>
                         <div className="form-row">
                             <div className="form-group">
                                 <label htmlFor="name">Full Name</label>
@@ -49,8 +49,8 @@ const SupervisorRegister = () => {
                         </div>
                         <div className="form-row">
                             <div className="form-group">
-                                <label htmlFor="org-password">Organization Password</label>
-                                <input type="password" id="org-password" placeholder="Enter organization password" required />
+                                <label htmlFor="org-password">Work capacity</label>
+                                <input type="text" id="work-capacity" placeholder="Enter your capacity or job description " required />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="org-email">Organization Email</label>
